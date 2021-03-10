@@ -38,30 +38,32 @@
         </div>
         <div class="formulario__right">
             <p class="sign"><a href="" class="formulario__signIn sign--active">Sign In</a> or <a href="" class="formulario__signUp">Sign Up</a></p>
-            <div class="formulario__input">
-                <i class="far fa-user"></i>
-                <input class="formulario__inp" type="text" placeholder="Names" name="nombres">
-            </div>
-            <div class="formulario__input">
-                <i class="far fa-user fa--ocultar"></i>
-                <input class="formulario__inp" type="text" placeholder="Surnames" name="apellidos">
-            </div>
-            <div class="formulario__input">
-                <i class="fas fa-envelope-square"></i>
-                <input class="formulario__inp" type="email" id="" placeholder="E-mail" name="correo">
-            </div>
-            <div class="formulario__input">
-                <i class="fas fa-key"></i>
-                <input class="formulario__inp" type="password" placeholder="Password" name="contraseña">
-            </div>
-            <div class="formulario__statements">
-                <input type="checkbox" name="" id="">
-                <p class="formulario__terms">I agree all statements in <span>terms of service</span></p>
-            </div>
-            <div class="formulario__submit">
-                <input type="submit" value="Register">
-                <a href="#" class="member">Im already member</a>
-            </div>
+            <form action="form.php" method="POST">
+                <div class="formulario__input">
+                    <i class="far fa-user"></i>
+                    <input class="formulario__inp" type="text" placeholder="Names" name="nombres" required>
+                </div>
+                <div class="formulario__input">
+                    <i class="far fa-user fa--ocultar"></i>
+                    <input class="formulario__inp" type="text" placeholder="Surnames" name="apellidos" required>
+                </div>
+                <div class="formulario__input">
+                    <i class="fas fa-envelope-square"></i>
+                    <input class="formulario__inp" type="email" id="" placeholder="E-mail" name="email" required>
+                </div>
+                <div class="formulario__input">
+                    <i class="fas fa-key"></i>
+                    <input class="formulario__inp" type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="formulario__statements">
+                    <input type="checkbox" name="" id="" required>
+                    <p class="formulario__terms">I agree all statements in <span>terms of service</span></p>
+                </div>
+                <div class="formulario__submit">
+                    <input type="submit" value="Register">
+                    <a href="#" class="member">Im already member</a>
+                </div>
+            </form>
         </div>
     </section>
 </body>
